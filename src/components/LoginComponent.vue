@@ -61,8 +61,8 @@ async function loginFunc() {
         alert('check mail and pass')
         return
       }
-      localStorage.id = data.data.id
-      localStorage.uuid = data.data.uuid
+      localStorage.id = data.data.data.id
+      localStorage.uuid = data.data.data.uuid
       router.push('/')
     } else {
       if (pass.value != pass2.value) {
