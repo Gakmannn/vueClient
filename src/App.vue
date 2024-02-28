@@ -8,6 +8,8 @@ if (location.pathname != '/login'){
     checkUser()
   }
 
+  // теперь ошибок нет
+
   async function checkUser() {
     const resp = await fetch("http://localhost:3001/check_user", {
       method: "post",
