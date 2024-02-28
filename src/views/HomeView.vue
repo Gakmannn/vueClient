@@ -1,14 +1,13 @@
 <template>
   <h1>Posts</h1>
-    <div id="content">
-      <template v-for="post of data" :key="post.id">
-        <PostComponent :post="post" emoji="😁" :countChars="countChars"/>
-      </template>
-    </div>
-    <div style="margin: 20px 0; text-align: center;">
-      <button id="add" @click="router.push('/add_post')">'add post'</button>
-    </div>
-
+  <div id="content">
+    <template v-for="post of data" :key="post.id">
+      <PostComponent :post="post" emoji="😁" :countChars="countChars"/>
+    </template>
+  </div>
+  <div style="margin: 20px 0; text-align: center;">
+    <button id="add" @click="router.push('/add_post')">'add post'</button>
+  </div>
 </template>
 
 <script setup lang="ts">
